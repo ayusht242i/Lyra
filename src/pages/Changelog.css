@@ -1,0 +1,49 @@
+.changelog-page { padding: 120px 0 80px; min-height: 100vh; }
+.changelog-hero { margin-bottom: 64px; }
+.changelog-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 12px;
+}
+.changelog-hero p { font-size: 1.0625rem; color: var(--muted); }
+.changelog-list { max-width: 720px; display: flex; flex-direction: column; gap: 0; }
+.changelog-entry {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border);
+}
+.changelog-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.changelog-version {
+  font-family: var(--mono);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.changelog-date { font-size: 0.875rem; color: var(--subtle); }
+.changelog-type {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+.changelog-changes { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.changelog-changes li {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+}
+.changelog-changes li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--teal-600);
+  font-size: 0.8125rem;
+}

@@ -1,0 +1,69 @@
+.about-page { padding: 120px 0 80px; min-height: 100vh; }
+.about-hero { max-width: 680px; margin-bottom: 64px; }
+.about-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.about-hero p { font-size: 1.0625rem; color: var(--muted); line-height: 1.75; }
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  margin-bottom: 80px;
+  padding: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+.about-stat { text-align: center; }
+.about-stat__n {
+  display: block;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--teal-800);
+}
+.about-stat__label { font-size: 0.875rem; color: var(--muted); }
+.about-team h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  margin-bottom: 80px;
+}
+.team-card {
+  text-align: center;
+  padding: 28px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.team-avatar {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: var(--teal-800);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
+}
+.team-name { font-size: 0.9375rem; font-weight: 600; margin-bottom: 4px; }
+.team-role { font-size: 0.8125rem; color: var(--subtle); }
+.about-cta {
+  padding: 56px;
+  background: linear-gradient(135deg, var(--teal-50), var(--teal-100));
+  border: 1px solid var(--teal-300);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+.about-cta h2 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 12px; }
+.about-cta p { font-size: 1rem; color: var(--muted); margin-bottom: 24px; }
